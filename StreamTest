@@ -18,8 +18,8 @@ public class StreamTest {
 	}
 	
 	public static List<String> getHighCaloricDishesNamesInJava7(List<Dish> dishes) {
-		List<Dish> lowCalDishes = new ArrayList<Dish>(); // List to store low calorie dishes
-		List<String> lowCalDishesName = new ArrayList<String>(); // List to store name of lowCalDishes
+		List<Dish> lowCalDishes = new ArrayList<Dish>(); 		// List to store low calorie dishes
+		List<String> lowCalDishesName = new ArrayList<String>();	// List to store name of lowCalDishes
 		
 		// Filter dishes with calorie under 400
 		for (Dish dish : dishes) {
@@ -45,11 +45,11 @@ public class StreamTest {
 	}
 	
 	public static List<String> getHighCaloricDishesNamesInJava8(List<Dish> dishes) {
-		return dishes.stream()										// Use stream
+		return dishes.stream()							// Use stream
 				.filter((dish) -> dish.getCalories() > 300) 		// Filter by calorie (if)
 				.sorted(Comparator.comparing(Dish::getCalories))	// Sort by calorie
-				.map(Dish::getName)									// Map by using name (Getter/Setter)
-				.limit(3)											// Limit only 3
-				.collect(Collectors.toList());						// Change to list
+				.map(Dish::getName)					// Map by using name (Getter/Setter)
+				.limit(3)						// Limit only 3
+				.collect(Collectors.toList());				// Change to list
 	}
 }
