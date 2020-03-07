@@ -1,0 +1,55 @@
+package chap04;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamTest {
+	public static void main(String[] args) {
+		// Filter/Sort by using Java 7 methods
+		getHighCaloricDishesNamesInJava7(Dish.menu).forEach(System.out::println);
+		
+		System.out.println("----------------");
+		
+		// Filter/Sort by using Java 8 stream
+		getHighCaloricDishesNamesInJava8(Dish.menu).forEach(System.out::println);
+	}
+	
+	public static List<String> getHighCaloricDishesNamesInJava7(List<Dish> dishes) {
+		List<Dish> lowCalDishes = new ArrayList<Dish>(); // List to store low calorie dishes
+		List<String> lowCalDishesName = new ArrayList<String>(); // List to store name of lowCalDishes
+		
+		// Filter dishes with calorie under 400
+		for (Dish dish : dishes) {
+			if (dish.getCalories() > 300) {
+				lowCalDishes.add(dish);
+			}
+		}
+		
+		// Sort by calorie
+		Collections.sort(lowCalDishes, new Comparator<Dish>() {
+			@Override
+			public int compare(Dish d1, Dish d2) {
+				return Integer.compare(d1.getCalories(), d2.getCalories());
+			}
+		});
+		
+		// Add dish names in List 
+		for (Dish dish : lowCalDishes) {
+			lowCalDishesName.add(dish.getName());
+		}
+		
+		return lowCalDishesName;
+	}
+	
+	public static List<String> getHighCaloricDishesNamesInJava8(List<Dish> dishes) {
+		return dishes.stream()										// Use stream
+				.filter((dish) -> dish.getCalories() > 300) 		// Filter by calorie (if)
+				.sorted(Comparator.comparing(Dish::getCalories))	// Sort by calorie
+				.map(Dish::getName)									// Map by using name (Getter/Setter)
+				.limit(3)											// Limit only 3
+				.collect(Collectors.toList());						// Change to list
+	}
+}
