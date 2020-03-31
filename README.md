@@ -1,5 +1,5 @@
 # Java8-Summary
-Java8 신규 기능 정의 >> Wiki 참고
+Java8 신규 기능 정의
 
 1. 람다식 (Lambda function)
 
