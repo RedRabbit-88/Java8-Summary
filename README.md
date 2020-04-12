@@ -43,7 +43,7 @@ https://github.com/RedRabbit-88/Java8-Summary/wiki/1.3.-%EB%9E%8C%EB%8B%A4-%ED%9
 ### 3. 스트림의 특성
 https://github.com/RedRabbit-88/Java8-Summary/wiki/2.2.-%EC%8A%A4%ED%8A%B8%EB%A6%BC(Stream)%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%3F
 
-### 4. 스트림 활용 (filter, map, flatMap, sort, reducing 등)
+### 4. 스트림 활용 (filter, map, flatMap, sorted, reducing 등)
 https://github.com/RedRabbit-88/Java8-Summary/wiki/2.3.-%EC%8A%A4%ED%8A%B8%EB%A6%BC-%ED%99%9C%EC%9A%A9
 
 ### 5. 스트림 중간/최종연산
