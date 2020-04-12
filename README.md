@@ -24,6 +24,7 @@ https://github.com/RedRabbit-88/Java8-Summary/wiki/1.2.-%EB%8B%A4%EC%96%91%ED%95
 ### 4. 람다 표현식 메서드 정리 (Comparator, Predicate 조합 등)
 https://github.com/RedRabbit-88/Java8-Summary/wiki/1.3.-%EB%9E%8C%EB%8B%A4-%ED%91%9C%ED%98%84%EC%8B%9D-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%A9%94%EC%84%9C%EB%93%9C
 
+---
 
 ## 2. 스트림 (Stream)
 
@@ -51,6 +52,18 @@ https://github.com/RedRabbit-88/Java8-Summary/wiki/2.4.-%EC%8A%A4%ED%8A%B8%EB%A6
 ### 6. 기본형 특화 스트림 (IntStream, DoubleStream, LongStream)
 https://github.com/RedRabbit-88/Java8-Summary/wiki/2.5.-%EA%B8%B0%EB%B3%B8%ED%98%95-%ED%8A%B9%ED%99%94-%EC%8A%A4%ED%8A%B8%EB%A6%BC
 
+---
 
-99. Java8 컬렉션 신규 메서드 정리
-* https://github.com/RedRabbit-88/Java8-Summary/wiki/5.1.-%EC%BB%AC%EB%A0%89%EC%85%98-API-%EA%B0%9C%EC%84%A0
+## 3. 스트림 데이터 수집 (Reducing, Grouping, Partitioning)
+
+### 1. 데이터 수집 정리
+https://github.com/RedRabbit-88/Java8-Summary/wiki/3.1.-%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91
+
+* **Reducing**<br>
+https://github.com/RedRabbit-88/Java8-Summary/wiki/3.1.-%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91#2-collectors-reducing
+
+* **Grouping**<br>
+https://github.com/RedRabbit-88/Java8-Summary/wiki/3.1.-%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91#3-collectors-grouping
+
+* **Partitioning**<br>
+https://github.com/RedRabbit-88/Java8-Summary/wiki/3.1.-%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91#4-collectors-partitioning
