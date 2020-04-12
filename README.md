@@ -15,6 +15,15 @@ Java8 신규 기능 정의
 * 메서드 참조(Method Reference)를 이용하면 기존의 메서드 구현을 간소화 가능
 * Comparator, Predicate, Function 같은 함수형 인터페이스는 다양한 디폴트 메서드 제공
 
+### 2. 람다와 메서드 참조 (정의 및 사용방법)
+https://github.com/RedRabbit-88/Java8-Summary/wiki/1.1.-%EB%9E%8C%EB%8B%A4%EC%99%80-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%B0%B8%EC%A1%B0
+
+### 3. 함수형 인터페이스 정리 (Predicate, Consumer, Function 등)
+https://github.com/RedRabbit-88/Java8-Summary/wiki/1.2.-%EB%8B%A4%EC%96%91%ED%95%9C-%ED%95%A8%EC%88%98%ED%98%95-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4
+
+### 4. 람다 표현식 메서드 정리 (Comparator, Predicate 조합 등)
+https://github.com/RedRabbit-88/Java8-Summary/wiki/1.3.-%EB%9E%8C%EB%8B%A4-%ED%91%9C%ED%98%84%EC%8B%9D-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%A9%94%EC%84%9C%EB%93%9C
+
 ## 2. 스트림 (Stream)
 
 99. Java8 컬렉션 신규 메서드 정리
